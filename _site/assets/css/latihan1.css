@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Merriweather:400,600&display=swap');
+
+body{
+	margin: 0;
+}
+/*navigasi*/
+nav{
+	background-color: #00b3b3;
+	box-shadow: 13px 12px 23px #eee;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+	border-bottom: 1px solid #eee;
+	padding: 1rem;
+	padding-left: 30px;
+}
+nav li{
+	margin-right: 50px;
+}
+nav li a{
+	font-family: 'Montserrat';
+	text-decoration: none;
+	color: #fff;
+}
+nav li a:hover{
+	border-top: 3px solid #fff;
+	padding-top: 13px;
+	font-weight: bold;
+}
+
+/*konten*/
+section{
+	word-break: break-word;
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+}
+.home{
+	margin-left: 25%;
+}
+.nama-home{
+	letter-spacing: 5px;
+}
+.judul-bio, .judul-galery{
+	font-family: 'Montserrat';
+	font-size: 32px;
+	margin-top: 0;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.h2-bio{
+	font-family: 'Montserrat';
+	text-align: center;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #00b3b3;
+}
+section p{
+	font-family: 'Merriweather';
+}
+
+.box-profile{
+	margin-left: 32%;
+	margin-right: 32%;
+	border: 1px solid #00b3b3;
+	border-radius: 25px;
+	padding: 3rem;
+}
+.img-bio{
+	width: 150px;
+	height: 150px;
+	border: 1px solid #00b3b3;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 12px;
+	background-color: #00b3b3;
+}
+.info{
+	padding-top: 1rem;
+}
+.galery{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.judul-galery{
+	text-align: left;
+	border-bottom: 1px solid #00b3b3;
+	padding-bottom: 1rem;
+}
+.foto-galery img{
+	width: 32.4%;
+	height: 250px;
+	padding: 4px;
+}
