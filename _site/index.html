@@ -15,8 +15,37 @@
 		<li>
 			<a href="/galery/14116021">Gallery</a>
 		</li>
+		<li class="mode">
+			<a id="switchMode">Berubah ke mode malam</a>
+		</li>
 	</ul>
 </nav>
+<script type="text/javascript">
+	switcher = document.getElementById("switchMode")
+	body = document.getElementsByTagName("body")[0]
+
+		switcher.onclick = function(){
+			if (switcher.innerText == "Berubah ke mode malam") {
+				switcher.innerText = "Berubah ke mode siang";
+				body.classList.add("malam")
+			}else{
+				switcher.innerText = "Berubah ke mode malam";
+				body.classList.remove("malam")
+			}
+		}
+
+		body.onload = function(){
+			var d = new Date();
+			var h = d.getHours();	
+			if(h>=18){
+				body.classList.add("malam")
+				switcher.innerText = "Berubah ke mode siang";
+			}else{
+				body.classList.remove("malam")
+				switcher.innerText = "Berubah ke mode malam";
+			}
+		}
+</script>
 	<section>
 		<div class="home">
 <h1>Welcome</h1>
